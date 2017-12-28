@@ -63,7 +63,7 @@ class Subscription(object):
 
 ##############
 import ctypes
-lib = ctypes.cdll.LoadLibrary('cryptonight_lib/cryptonight.c')
+lib = ctypes.cdll.LoadLibrary('cryptonight_lib\\cryptonight.c')
 c_pow = lib.cryptonight_hash
 c_pow.argtypes = [ctypes.POINTER(ctypes.c_char), ctypes.POINTER(ctypes.c_char), ctypes.c_int]
 
